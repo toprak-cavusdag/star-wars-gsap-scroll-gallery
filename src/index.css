@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+.video-section {
+  position: relative;
+  overflow: hidden;
+}
+.end-screen {
+  position: relative;
+}
+
+
+.image-reverse{
+
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+/* styles.css */
+.logo-container {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 1s, transform 1s ease-out;
+}
+
+.logo-container.show {
+  opacity: 1;
+  transform: translateY(0);
+}
